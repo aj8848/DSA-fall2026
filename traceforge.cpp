@@ -61,7 +61,7 @@ void searchEvent(const Event *head, int target_id)
     // start from the first event
     const Event *current = head;
 
-    // check the event exists or not?
+    // check the event exists or not
     while (current != nullptr)
     {
         // check if the current id is matched with the targeted_id or not?
@@ -156,7 +156,7 @@ int main()
         // Ask the user to select the avaliable Choice
         cout << "\n Enter your choice (1 to 6): ";
         if (!(cin >> choice))
-        { 
+        {
             cin.clear();
 
             cin.ignore(1000, '\n');
